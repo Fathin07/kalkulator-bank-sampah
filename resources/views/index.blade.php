@@ -50,6 +50,17 @@ button {
     font-weight: bold;
     font-size: 24px;
 }
+.admin-login-button {
+        display: inline-block;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-right: 10px;
+        float: right;
+}
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,8 +68,9 @@ button {
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body>
-    
+<a href="{{ route('admin.login') }}" class="admin-login-button">Login Admin</a>  
     <div class="container">
+   
         <h1>Kalkulator Bank Sampah</h1>
         <form id="calculator-form">
             <div class="form-group">
@@ -82,6 +94,5 @@ button {
         </div>
     </div>
     <script src="{{ asset('js/calculator.js') }}"></script>
-    <a href="{{ route('admin.login') }}" class="btn btn-primary">Login Admin</a>
 </body>
 </html>
